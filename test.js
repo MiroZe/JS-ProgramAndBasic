@@ -1,8 +1,27 @@
-function test(input){
-    let age1 = Number(input[0])
-    let age2 = Number(input[1])
-console.log(age1)
+function equalmatrix (arr) {
+  
+
+  for(let i =0 ; i < arr.length; i++) {
+    let currentMatrix = arr[i].toString();
+    let lineSum = 0;
+    let columnSum = 0;
+    let newMatrix = currentMatrix.split(',')
+     for(let element of newMatrix) {
+      let number = Number(element);
+      lineSum += number
+      
+     }
+     console.log(lineSum);
+
+  }
+  
+    
+  
+
 }
-console.log(`The final price is ${prwithdiscount} lv.`)
-console.log(`The discount is ${totdiscout} lv.`)
-test([5])
+
+
+equalmatrix([[4, 5, 6],
+            [6, 5, 4], 
+            [5, 5, 5]])
+  
